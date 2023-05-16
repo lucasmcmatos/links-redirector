@@ -9,7 +9,8 @@
 <body>
 
     <h1>Links</h1>
-    <a href="/add">Adicionar Link</a>
+    <a href="/add">Add Link</a>
+    <br>
     <hr>
     <% for(let i=0; i < links.length; i++) {%>
     
@@ -20,7 +21,7 @@
                 <div><%=links[i].description%></div>
                 <div><%=links[i].url%></div>
                 <button type="submit" >Delete</button>
-            
+                <button><a href="/edit/<%=links[i]._id%>">Edit Link</a></button>
             </form>
         </div>
 
