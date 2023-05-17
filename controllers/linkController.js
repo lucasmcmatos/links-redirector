@@ -4,7 +4,7 @@ const redirect = async (req , res)=>{
     let title = req.params.title;
 
     try{
-        let doc = await Link.findOne({title:title});
+        let doc = await Link.findOneAndUpdate({title:title} , {$inc: {click: 1}});
         res.redirect(doc.url);
 
     } catch(err){
@@ -19,7 +19,7 @@ const addLink = async (req , res)=>{
         let doc = await link.save();
         res.redirect("/");
     }catch(err){
-        res.render("index" , {err , body: req.body});
+        res.render("add" , {err , body: req.body});
     }
 
 }

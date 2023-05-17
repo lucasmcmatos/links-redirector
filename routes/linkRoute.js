@@ -6,7 +6,7 @@ var methodOverride = require('method-override')
 router.use(methodOverride('_method'))
 
 router.get("/" , linkController.allLinks)
-router.get("/add" , (req , res) =>res.render("../templates/index.ejs" , {err: false, body:{}}))
+router.get("/add" , (req , res) =>res.render("../templates/add.ejs" , {err: false, body:{}}))
 router.get("/edit/:id" , linkController.loadLink)
 router.get("/:title", linkController.redirect )
 
