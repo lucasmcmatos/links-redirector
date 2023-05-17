@@ -1,2 +1,3 @@
 # linksRedirector
-Basicly, this is a project that the user can add a "Tilte" that can be digicted at the search bar of your's browser and add a link that will be redirected. This is a way to study databases, at this, mongodb, and mongoose.
+A project that uses HTML, CSS, JavaScript, Node.js, MongoDB, Mongoose. At this project I use it to study this mentioneded technologies.
+His functionality resumes into a interface where the user can add a parameter (title), with a link and description where this parameter will be added at the URL, (Example: localhost:3000/title), and this parameter will redirect to the URL that the user add when sing up the Title. 
